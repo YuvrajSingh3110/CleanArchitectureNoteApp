@@ -1,6 +1,10 @@
 package com.plcoding.cleanarchitecturenoteapp.feature_note.presentation
 
+import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
+import android.view.WindowManager
+import android.view.animation.AnimationUtils
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.animation.ExperimentalAnimationApi
@@ -14,6 +18,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
+import com.plcoding.cleanarchitecturenoteapp.R
 import com.plcoding.cleanarchitecturenoteapp.feature_note.presentation.add_edit_note.AddEditNoteScreen
 import com.plcoding.cleanarchitecturenoteapp.feature_note.presentation.notes.NotesScreen
 import com.plcoding.cleanarchitecturenoteapp.feature_note.presentation.util.Screen
@@ -25,6 +30,7 @@ class MainActivity : ComponentActivity() {
 @ExperimentalAnimationApi
 override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         setContent {
             CleanArchitectureNoteAppTheme {
                 Surface(

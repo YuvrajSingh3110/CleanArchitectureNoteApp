@@ -9,7 +9,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/app_icon"
         android:supportsRtl="true"
-        android:theme="@style/Theme.CleanArchitectureNoteApp">
+        android:theme="@style/splashScreenTheme">
         <activity
             android:name=".feature_note.presentation.MainActivity"
             android:exported="true"
